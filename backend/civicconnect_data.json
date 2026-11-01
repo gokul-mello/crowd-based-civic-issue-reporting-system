@@ -1,0 +1,282 @@
+{
+  "users": [
+    {
+      "_id": "6ae76830fddb048ad604c1c4",
+      "name": "Municipal Commissioner A. K. Verma",
+      "email": "admin@civicconnect.gov.in",
+      "phone": "+91-9876543210",
+      "passwordHash": "$2b$12$pBDsO29mTfdNbbkSfoZQ8erukaDJHpkbRp1xsinN6Sq0q..qtLiH6",
+      "role": "authority",
+      "department": "6ae7682ffddb048ad604c1bf",
+      "designation": "Chief Municipal Officer",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1c5",
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@example.com",
+      "phone": "+91-9811122233",
+      "passwordHash": "$2b$12$JjSK4rb/.CeZQEq82g5V7O6RQ7V8PvvYoGVRoIAOBolc3PhE8SifK",
+      "role": "citizen",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1c6",
+      "name": "Sneha Patel",
+      "email": "sneha.patel@example.com",
+      "phone": "+91-9822233344",
+      "passwordHash": "$2b$12$JjSK4rb/.CeZQEq82g5V7O6RQ7V8PvvYoGVRoIAOBolc3PhE8SifK",
+      "role": "citizen",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1c7",
+      "name": "Rohan Iyer",
+      "email": "rohan.iyer@example.com",
+      "phone": "+91-9833344455",
+      "passwordHash": "$2b$12$JjSK4rb/.CeZQEq82g5V7O6RQ7V8PvvYoGVRoIAOBolc3PhE8SifK",
+      "role": "citizen",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1c8",
+      "name": "Ananya Gupta",
+      "email": "ananya.gupta@example.com",
+      "phone": "+91-9844455566",
+      "passwordHash": "$2b$12$JjSK4rb/.CeZQEq82g5V7O6RQ7V8PvvYoGVRoIAOBolc3PhE8SifK",
+      "role": "citizen",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    }
+  ],
+  "departments": [
+    {
+      "_id": "6ae7682ffddb048ad604c1bf",
+      "name": "Roads & Public Infrastructure",
+      "code": "R&PI",
+      "description": "Pothole restoration, street re-carpeting, pavements, flyovers and pedestrian safety",
+      "contactEmail": "roads@civicconnect.gov.in",
+      "contactPhone": "+91-11-23001001",
+      "headOfficial": "Er. Rajesh Kumar Sharma",
+      "createdAt": "2026-11-01T16:26:23.804761+00:00"
+    },
+    {
+      "_id": "6ae7682ffddb048ad604c1c0",
+      "name": "Sanitation & Solid Waste Management",
+      "code": "SSWM",
+      "description": "Municipal garbage disposal, door-to-door collection, street sweeping, community dump clearance",
+      "contactEmail": "sanitation@civicconnect.gov.in",
+      "contactPhone": "+91-11-23001002",
+      "headOfficial": "Dr. Sunita Deshmukh",
+      "createdAt": "2026-11-01T16:26:23.804761+00:00"
+    },
+    {
+      "_id": "6ae7682ffddb048ad604c1c1",
+      "name": "Water Supply & Sewerage Board",
+      "code": "WSSB",
+      "description": "Potable water pipelines, distribution leakage, sewage lines, storm drain maintenance",
+      "contactEmail": "water@civicconnect.gov.in",
+      "contactPhone": "+91-11-23001003",
+      "headOfficial": "Er. Arvind Mehta",
+      "createdAt": "2026-11-01T16:26:23.804761+00:00"
+    },
+    {
+      "_id": "6ae7682ffddb048ad604c1c2",
+      "name": "Electricity & Streetlighting Authority",
+      "code": "ESA",
+      "description": "Public illumination, solar street lights, pole repairs, exposed electrical hazard mitigation",
+      "contactEmail": "lights@civicconnect.gov.in",
+      "contactPhone": "+91-11-23001004",
+      "headOfficial": "Er. Priya Swaminathan",
+      "createdAt": "2026-11-01T16:26:23.804761+00:00"
+    },
+    {
+      "_id": "6ae7682ffddb048ad604c1c3",
+      "name": "Horticulture & Public Parks",
+      "code": "HPP",
+      "description": "Civic garden maintenance, broken benches, playground safety, tree pruning",
+      "contactEmail": "parks@civicconnect.gov.in",
+      "contactPhone": "+91-11-23001005",
+      "headOfficial": "Shri Vikram Patil",
+      "createdAt": "2026-11-01T16:26:23.804761+00:00"
+    }
+  ],
+  "complaints": [
+    {
+      "_id": "6ae76830fddb048ad604c1c9",
+      "complaintId": "CC-2026-RD01",
+      "citizenId": "6ae76830fddb048ad604c1c5",
+      "originalDescription": "The main road connecting Sector 14 to metro station has 4 very deep potholes. Two scooter riders fell yesterday.",
+      "professionalTitle": "Request for Urgent Road Surface Repair & Pothole Rectification on Metro Approach Road",
+      "professionalDescription": "To the Concerned Executive Engineer, Roads & Public Infrastructure:\n\nI am writing to formally submit a community civic grievance regarding dangerous road craters along the Sector 14 Metro Station approach corridor. Deep potholes pose imminent hazard to two-wheeler commuters.\n\nImmediate mechanized road resurfacing and cold-mix patch filling are urgently petitioned.",
+      "category": "Roads & Potholes",
+      "area": "Sector 14, Metro Corridor",
+      "location": "Opposite Gate 3, Sector 14 Metro Station",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "imageUrls": [
+        "/uploads/demo-pothole.jpg"
+      ],
+      "status": "In Progress",
+      "priorityScore": 82,
+      "priorityLevel": "Critical",
+      "priorityReason": "Priority Score 82/100: Category weight (25pts), 42 community votes (38pts), pending duration 4d (10pts), urgency factor (10pts).",
+      "voteCount": 42,
+      "departmentId": "6ae7682ffddb048ad604c1bf",
+      "assignedAuthorityId": "6ae76830fddb048ad604c1c4",
+      "authorityRemarks": "Inspected on 11th Oct. Tender issued for asphalt road-patching.",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00",
+      "updatedAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1ca",
+      "complaintId": "CC-2026-GB02",
+      "citizenId": "6ae76830fddb048ad604c1c6",
+      "originalDescription": "Huge pile of garbage accumulated outside public park entrance since last Friday. Stray dogs scattering waste everywhere.",
+      "professionalTitle": "Civic Grievance: Immediate Removal of Accumulated Solid Waste Outside Children Park",
+      "professionalDescription": "To the Health & Sanitation Officer:\n\nThis petition highlights hazardous accumulation of uncollected municipal solid waste adjacent to the southern gate of Green Valley Children Park. Immediate dumper collection is required.",
+      "category": "Garbage & Sanitation",
+      "area": "Green Valley, Phase 2",
+      "location": "Gate No. 2, Green Valley Public Park",
+      "latitude": 28.625,
+      "longitude": 77.218,
+      "imageUrls": [
+        "/uploads/demo-garbage.jpg"
+      ],
+      "status": "Assigned",
+      "priorityScore": 78,
+      "priorityLevel": "High",
+      "priorityReason": "Priority Score 78/100: Category weight (20pts), 35 community votes (36pts), urgency factor (14pts).",
+      "voteCount": 35,
+      "departmentId": "6ae7682ffddb048ad604c1c0",
+      "assignedAuthorityId": "6ae76830fddb048ad604c1c4",
+      "authorityRemarks": "Assigned to Ward Sanitation Inspector for dump-truck clearance drive.",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00",
+      "updatedAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1cb",
+      "complaintId": "CC-2026-LT03",
+      "citizenId": "6ae76830fddb048ad604c1c7",
+      "originalDescription": "Three streetlights along our residential lane have stopped working. Entire block is pitch dark.",
+      "professionalTitle": "Notice of Inoperative Street Lighting Creating Public Safety Vulnerability",
+      "professionalDescription": "To the Electrical Engineering Department:\n\nWe formally submit a request regarding consecutive non-functional streetlights along 5th Cross Lane. Night darkness presents public safety risk.",
+      "category": "Streetlights & Electrical",
+      "area": "Model Town, 5th Cross",
+      "location": "Poles #14 to #17, 5th Cross Lane",
+      "latitude": 28.632,
+      "longitude": 77.225,
+      "imageUrls": [
+        "/uploads/demo-light.jpg"
+      ],
+      "status": "Under Review",
+      "priorityScore": 65,
+      "priorityLevel": "High",
+      "priorityReason": "Priority Score 65/100: Category weight (30pts), 18 community votes (25pts), urgency factor (5pts).",
+      "voteCount": 18,
+      "departmentId": "6ae7682ffddb048ad604c1c2",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00",
+      "updatedAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1cc",
+      "complaintId": "CC-2026-WT04",
+      "citizenId": "6ae76830fddb048ad604c1c8",
+      "originalDescription": "Drinking water pipeline joint broke under footpath. Thousands of liters of water wasted.",
+      "professionalTitle": "Urgent Redressal: Main Potable Water Supply Pipeline Fracture & Severe Wastage",
+      "professionalDescription": "To the Water Supply & Sewerage Board:\n\nMajor rupture in underground potable water mainline. Outflow is flooding the street and wasting treated municipal water.",
+      "category": "Water Supply & Leakage",
+      "area": "Mahatma Gandhi Road, Market Area",
+      "location": "In front of Post Office Footpath, MG Road",
+      "latitude": 28.64,
+      "longitude": 77.23,
+      "imageUrls": [
+        "/uploads/demo-water.jpg"
+      ],
+      "status": "Submitted",
+      "priorityScore": 88,
+      "priorityLevel": "Critical",
+      "priorityReason": "Priority Score 88/100: Category weight (22pts), 52 community votes (41pts), urgency factor (25pts).",
+      "voteCount": 52,
+      "departmentId": "6ae7682ffddb048ad604c1c1",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00",
+      "updatedAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1cd",
+      "complaintId": "CC-2026-DR05",
+      "citizenId": "6ae76830fddb048ad604c1c5",
+      "originalDescription": "Stormwater drain overflowing behind community hall.",
+      "professionalTitle": "Formal Redressal for Desilting & Overflow Prevention in Stormwater Drain",
+      "professionalDescription": "To the Municipal Drainage Division:\n\nSilt buildup in primary canal behind community hall. Suction and desilting requested.",
+      "category": "Drainage & Sewage",
+      "area": "Block B, Vasant Vihar",
+      "location": "Rear perimeter of Community Hall, Block B",
+      "latitude": 28.56,
+      "longitude": 77.16,
+      "imageUrls": [
+        "/uploads/demo-drain.jpg"
+      ],
+      "status": "Resolved",
+      "priorityScore": 72,
+      "priorityLevel": "High",
+      "priorityReason": "Resolved issue archive score",
+      "voteCount": 29,
+      "departmentId": "6ae7682ffddb048ad604c1c1",
+      "assignedAuthorityId": "6ae76830fddb048ad604c1c4",
+      "authorityRemarks": "Super Sucker machine deployed. Drain completely desilted.",
+      "resolutionNotes": "Suction and desilting operations completed successfully by Drainage Sub-division 2.",
+      "resolvedAt": "2026-11-01T16:26:24.709957+00:00",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00",
+      "updatedAt": "2026-11-01T16:26:24.709957+00:00"
+    }
+  ],
+  "votes": [],
+  "complaint_histories": [
+    {
+      "_id": "6ae76830fddb048ad604c1ce",
+      "complaintId": "6ae76830fddb048ad604c1c9",
+      "changedBy": "6ae76830fddb048ad604c1c5",
+      "actionType": "CREATED",
+      "newStatus": "Submitted",
+      "remarks": "Initial complaint registered",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1cf",
+      "complaintId": "6ae76830fddb048ad604c1ca",
+      "changedBy": "6ae76830fddb048ad604c1c6",
+      "actionType": "CREATED",
+      "newStatus": "Submitted",
+      "remarks": "Initial complaint registered",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1d0",
+      "complaintId": "6ae76830fddb048ad604c1cb",
+      "changedBy": "6ae76830fddb048ad604c1c7",
+      "actionType": "CREATED",
+      "newStatus": "Submitted",
+      "remarks": "Initial complaint registered",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1d1",
+      "complaintId": "6ae76830fddb048ad604c1cc",
+      "changedBy": "6ae76830fddb048ad604c1c8",
+      "actionType": "CREATED",
+      "newStatus": "Submitted",
+      "remarks": "Initial complaint registered",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    },
+    {
+      "_id": "6ae76830fddb048ad604c1d2",
+      "complaintId": "6ae76830fddb048ad604c1cd",
+      "changedBy": "6ae76830fddb048ad604c1c5",
+      "actionType": "CREATED",
+      "newStatus": "Submitted",
+      "remarks": "Initial complaint registered",
+      "createdAt": "2026-11-01T16:26:24.709957+00:00"
+    }
+  ],
+  "notifications": []
+}

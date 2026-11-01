@@ -1,0 +1,23 @@
+# node_modules
+node_modules/
+.npm/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Build files
+dist/
+build/
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# IDE and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

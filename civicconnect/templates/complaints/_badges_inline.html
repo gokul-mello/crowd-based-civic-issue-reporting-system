@@ -1,0 +1,6 @@
+<div class="flex flex-wrap gap-2 text-xs">
+  <span class="rounded-full bg-slate-100 px-2 py-0.5">{{ c.get_category_display }}</span>
+  <span class="rounded-full bg-blue-100 px-2 py-0.5 text-blue-800">{{ c.get_status_display }}</span>
+  <span class="rounded-full bg-amber-100 px-2 py-0.5 text-amber-800">{{ c.get_priority_level_display }} priority</span>
+  {% if c.ai_source == 'gemini' %}<span class="rounded-full bg-slate-100 px-2 py-0.5">Written with Gemini</span>{% elif c.ai_source == 'heuristic' %}<span class="rounded-full bg-slate-100 px-2 py-0.5">Written with offline engine</span>{% endif %}
+</div>

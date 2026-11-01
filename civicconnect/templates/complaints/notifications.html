@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-4 text-2xl font-bold text-navy">Notifications</h1>
+<ul class="space-y-2">
+  {% for n in items %}<li class="rounded-md border border-slate-200 bg-white p-3 text-sm">
+    {% if n.complaint %}<a class="text-teal-700 underline" href="{{ n.complaint.get_absolute_url }}">{{ n.message }}</a>{% else %}{{ n.message }}{% endif %}
+    <span class="ml-2 text-slate-500">{{ n.created_at|date:"d M, H:i" }}</span></li>
+  {% empty %}<li class="text-slate-500">Nothing yet. Updates on your complaints will show up here.</li>{% endfor %}
+</ul>
+{% endblock %}

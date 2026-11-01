@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-1 text-2xl font-bold text-navy">Triage queue</h1>
+<p class="mb-4 text-slate-600">{{ pending }} pending · {{ critical }} critical and still open</p>
+<form method="get" class="mb-4 flex flex-wrap gap-2">
+  <select name="status" class="rounded-md border border-slate-300 px-3 py-2"><option value="">Any status</option>{% for k, l in statuses %}<option value="{{ k }}" {% if k == st %}selected{% endif %}>{{ l }}</option>{% endfor %}</select>
+  <select name="level" class="rounded-md border border-slate-300 px-3 py-2"><option value="">Any priority</option>
+    <option value="critical" {% if lvl == 'critical' %}selected{% endif %}>Critical</option><option value="high" {% if lvl == 'high' %}selected{% endif %}>High</option>
+    <option value="medium" {% if lvl == 'medium' %}selected{% endif %}>Medium</option><option value="low" {% if lvl == 'low' %}selected{% endif %}>Low</option></select>
+  <select name="category" class="rounded-md border border-slate-300 px-3 py-2"><option value="">All categories</option>{% for k, l in categories %}<option value="{{ k }}" {% if k == cat %}selected{% endif %}>{{ l }}</option>{% endfor %}</select>
+  <button class="rounded-md bg-teal-600 px-4 py-2 font-medium text-white">Filter</button>
+</form>
+<div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+<table class="w-full text-left text-sm">
+  <thead class="bg-slate-100 text-slate-600"><tr><th class="p-3">Issue</th><th class="p-3">Category</th><th class="p-3">Priority</th><th class="p-3">Votes</th><th class="p-3">Status</th><th class="p-3">Department</th></tr></thead>
+  <tbody>{% for c in complaints %}<tr class="border-t border-slate-100 hover:bg-slate-50">
+    <td class="p-3"><a class="font-medium text-navy hover:underline" href="{{ c.get_absolute_url }}">{{ c.title }}</a><br><span class="text-xs text-slate-500">{{ c.address }}</span></td>
+    <td class="p-3">{{ c.get_category_display }}</td><td class="p-3">{{ c.get_priority_level_display }} ({{ c.priority_score }})</td>
+    <td class="p-3">{{ c.votes_count }}</td><td class="p-3">{{ c.get_status_display }}</td><td class="p-3">{{ c.department|default:"Unassigned" }}</td></tr>
+  {% empty %}<tr><td colspan="6" class="p-6 text-slate-500">No complaints match these filters.</td></tr>{% endfor %}</tbody>
+</table></div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="mb-4 flex items-center justify-between"><h1 class="text-2xl font-bold text-navy">My complaints</h1>
+  <a href="{% url 'report' %}" class="rounded-md bg-teal-600 px-4 py-2 font-medium text-white hover:bg-teal-700">Report an issue</a></div>
+<div class="grid gap-3 md:grid-cols-2">
+  {% for c in mine %}{% include "complaints/_card.html" %}{% empty %}
+  <p class="text-slate-500">You haven't reported anything yet. Start with the problem you walk past every day.</p>{% endfor %}
+</div>
+<h2 class="mb-3 mt-8 text-xl font-semibold text-navy">Issues I voted on</h2>
+<div class="grid gap-3 md:grid-cols-2">
+  {% for c in voted %}{% include "complaints/_card.html" %}{% empty %}<p class="text-slate-500">No votes yet.</p>{% endfor %}
+</div>
+{% endblock %}
